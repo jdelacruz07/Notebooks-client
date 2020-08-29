@@ -24,8 +24,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -54,8 +52,7 @@ import { environment } from '../environments/environment';
     MatButtonModule,
     MatSidenavModule,
     MatSliderModule,
-    MatToolbarModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    MatToolbarModule
   ],
   providers: [
     NgbActiveModal
