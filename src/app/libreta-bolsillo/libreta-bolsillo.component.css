@@ -1,0 +1,52 @@
+.container {
+    margin: auto;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.encabezado {
+    text-align: center;
+    margin: 15px;
+    border-radius: 15px;
+    color: #9a1f8e;
+    background-color: #e7d4ed;  
+}
+
+button {
+    margin: 0 15px 15px 0;
+    background-color: rgba(111, 111, 175, .1);
+}
+
+img {
+    width: 350px;
+    height: 233px;   
+}
+
+
+.bolsillo-flex {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figcaption {
+    background: #e4fcce;
+    text-align: center;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    img { 
+        width: 140px;
+        height: 94px;
+    }
+    figure {
+        width: 140px;
+    }
+}

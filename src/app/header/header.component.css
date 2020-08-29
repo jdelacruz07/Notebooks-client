@@ -1,0 +1,93 @@
+.container {
+    margin-top: 15px ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container .mat-drawer {
+    min-width: 200px;
+}
+
+.container .mat-drawer .mat-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.toolbar{
+    height: 70px;
+    background-color: whitesmoke;
+    color: rgb(36, 85, 167)
+}
+
+.spacer {
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+.nav-link {
+    padding: 0;
+    cursor: pointer;
+    flex: 0 1 auto;
+}
+
+.mat-button{
+    color: #9a1f8e;
+    font-family: 'Rochester', cursive;
+    font-size: 1.5em;
+    /*  
+    font-family: 'Julius Sans One', sans-serif;
+    */
+}
+
+.containerJcc {
+    max-width: 85%;  
+    margin: auto;
+    font-family: 'Rochester', cursive;
+    font-size: x-large;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(170, 46, 46);
+    margin: 0;
+    font-size: 60px;  
+    padding: 15px;
+    font-family: 'Rochester', cursive;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(170, 46, 46);
+    margin: 0;
+    font-size: 40px;  
+    padding: 15px;
+    font-family: 'Rochester', cursive;
+}
+
+.header {
+    border-color: rgb(202, 25, 25);
+    border-radius: 15px;
+}
+
+h3 {
+    color: rgb(170, 46, 46);
+    margin: 0;
+    text-align: center;
+    font-family: 'Rochester', cursive;
+}
+
+ul {
+    align-items: baseline;
+}
+
+.totalItems {
+   border-radius: 50%;
+   border-style: solid;
+   font-size: medium;
+}
+
+

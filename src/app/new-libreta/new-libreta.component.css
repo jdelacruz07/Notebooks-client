@@ -1,0 +1,37 @@
+.container {
+    margin: auto;
+    margin-top: 15px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #9a1f8e;
+    background-color: #e7d4ed;
+}
+
+button {
+    float: right;
+}
+
+.libreta-added {
+    color: #1511b6;
+    background-color: #b1f831;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.stockSection {
+    clear: both;
+    padding: 15px;
+}
+
+.stock {
+    display: block;
+    padding-top: 15px;
+}
+
+svg {
+    float: right;
+}
+

@@ -1,0 +1,78 @@
+.container {
+    margin-top: 15px ;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h2{
+    margin: 0;
+}
+
+button {
+    margin: 0 15px 15px 0;
+    background-color: rgba(111, 111, 175, .1);
+}
+
+img {
+    width: 100%;
+}
+
+.introduction {
+    font-family: 'Rochester', cursive;
+    font-size: 1.5em;
+    color: rgb(36, 85, 167);
+}
+
+.carrousel-artesanal {
+    margin: auto;
+    max-width: 90%;
+}
+
+.carrousel-bolsillo {
+    margin: auto;
+    max-width: 90%;
+}
+
+.encabezado-media-carta  {
+    /*font-family: 'Julius Sans One', sans-serif;*/
+    text-align: center;
+    margin: 15px;
+    border-radius: 15px;
+    color: #9a1f8e;
+    background-color: #e7d4ed;
+}
+
+.encabezado-de-bolsillo {
+    text-align: center;
+    margin: 15px;
+    border-radius: 15px;
+    color: #9a1f8e;
+    background-color: #e7d4ed;  
+}
+
+.bolsillo-flex {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.image-bolsillo {  
+    width: 350px;
+    height: 233px;
+    padding-bottom: 15px;
+}
+
+.libretas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 50%;
+}
+
+@media (max-width: 576px) {
+    section {
+        width: 100%;
+    }
+}

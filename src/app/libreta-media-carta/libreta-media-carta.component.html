@@ -1,0 +1,45 @@
+<div class="container" *ngIf="isDescription == false">
+    <div class="encabezado-libretas">
+        <h2>Libretas:</h2>
+        <button name="cartaPapel" routerLink="/libreta-media-carta/papel" mat-raised-button>Papel</button>
+        <button name="cartaTela" routerLink="/libreta-media-carta/tela" mat-raised-button>Tela</button>
+    </div>
+    <div class="foto-flex">
+        <figure *ngFor="let libreta of libretas; let indice = index">
+            <!--
+            <a routerLink="/description/{{indice}}/artesanal{{material}}">
+            -->
+
+            <div class="arrow" (click)="descriptionNotebook(libreta)">
+                <div *ngIf="material !== undefined; else allFotos">
+                    <div *ngIf="libreta.typeOfMaterial == material">
+                        <div class="card">
+                            <img src={{libreta.urlPhoto}} alt="{{libreta.model}}">
+                            <figcaption>Modelo: {{libreta.model}}</figcaption>
+                            <figcaption>{{libreta.price | currency}}</figcaption>
+                        </div>
+                    </div>
+                </div>
+                <ng-template #allFotos>
+                    <div *ngIf="libreta.typeOfMaterial">
+                        <div class="card">
+                            <img src={{libreta.urlPhoto}} alt="{{libreta.model}}">
+                            <figcaption>Modelo: {{libreta.model}} </figcaption>
+                            <figcaption>{{libreta.price | currency}}</figcaption>
+                        </div>
+                    </div>
+                </ng-template>
+            </div>
+
+            <!--
+           </a>
+        -->
+        </figure>
+    </div>
+
+</div>
+
+<app-description *ngIf="isDescription == true" (isActive)="inactiveDescriptionNotebook($event)"
+    [libretaDescription]="libretaSelect"></app-description>
+
+<app-footer></app-footer>

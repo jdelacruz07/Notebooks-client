@@ -1,0 +1,58 @@
+.container {
+    margin: auto;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #9a1f8e;
+    background-color: #e7d4ed;
+}
+
+img {
+    width: 350px;
+    height: 245px; 
+}
+
+.foto-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figcaption {
+    text-align: center; 
+    background: #e4fcce;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.encabezado-libretas  {
+    /*font-family: 'Julius Sans One', sans-serif;*/
+    text-align: center;
+    margin: 15px;
+    border-radius: 15px;
+    color: #9a1f8e;
+    background-color: #e7d4ed;
+}
+
+button {
+    margin: 0 15px 15px 0;
+    background-color: rgba(111, 111, 175, .1);
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    img { 
+        width: 140px;
+        height: 94px;
+    }
+    figure {
+        width: 140px;
+    }
+}

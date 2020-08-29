@@ -1,0 +1,59 @@
+.container {
+    margin: auto;
+    clear: both;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.total {
+    text-align: right;
+    float: right;
+    margin-right: 15px;
+}
+
+.subTotal {
+    color: #7149b9;
+    background-color: #e2f8eb;
+    clear: both;
+}
+
+h1 {
+    text-align: center;
+    color: #9a1f8e;
+    background-color: #e7d4ed;
+    margin-top: 15px;
+}
+
+button {
+    float: right;
+    margin-top: 15px;
+}
+
+svg {
+    float: right;
+}
+
+p {
+    display: inline-block;
+}
+
+.list-items {
+    margin-right: 5px;
+}
+
+.price {
+    float: right;
+    margin-right: 5px;
+}
+
+.footer {
+    padding-top: 15px;
+    clear: both;
+}
+
+.note {
+    clear: both;
+    padding-top: 15px;
+}
+
+
+

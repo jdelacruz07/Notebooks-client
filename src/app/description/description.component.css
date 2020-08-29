@@ -1,0 +1,39 @@
+.container {
+    margin: auto;
+    margin-top: 15px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+img {
+    float: left;
+    width: 300px;
+    margin: 10px;
+}
+
+button {
+    float: right;
+    clear: both;
+}
+
+p {
+    padding: 5px;
+    margin: 0px;
+}
+
+.added {
+    background-color: #cae053;
+    color: #7a08c4;
+    clear: both;
+}
+
+h1 {
+    text-align: center;
+    color: #9a1f8e;
+    background-color: #e7d4ed;
+}
+
+.arrow {
+   clear: left;
+    text-align: left;
+    cursor: pointer;
+}

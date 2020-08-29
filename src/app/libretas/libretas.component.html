@@ -1,0 +1,99 @@
+<div class="container">
+  <main>
+    <p class="introduction">Arte de encuadernar manualmente donde conjugamos técnicas tradicionales con el buen gusto,
+      eligiendo minuciosamente los tonos, colores y texturas.
+      Utilizamos materiales de alta calidad, para lograr una pieza única y especial. Ideal para regalar o utilizarla
+      para el día
+      a día</p>
+    <p class="introduction"> Las fabricamos en diferentes tamaños: media carta y de bolsillo</p>
+    <p class="introduction"> Si necesitas una elaboración especial para tu evento contacta con nosotros y estaremos
+      encantados de ayudarte.</p>
+    <p class="introduction">Estos son algunos de nuestros diseños:</p>
+  </main>
+
+  <div class="libretas">
+    <section>
+      <div class="encabezado-media-carta">
+        <h2>Libretas:</h2>
+        <button name="cartaPapel" routerLink="/libreta-media-carta/papel" mat-raised-button>Papel</button>
+        <button name="cartaTela" routerLink="/libreta-media-carta/tela" mat-raised-button>Tela</button>
+      </div>
+
+      <div class="carrousel-artesanal">
+        <ngb-carousel *ngIf="imageArtesanal">
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="imageArtesanal[0]" alt="Random first slide">
+            </div>
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="imageArtesanal[1]" alt="Random second slide">
+            </div>
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="imageArtesanal[2]" alt="Random third slide">
+            </div>
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+    </section>
+
+    <section>
+      <div class="encabezado-de-bolsillo">
+        <h2>Libretas de bolsillo: </h2>
+        <button name="bolsilloPapel" routerLink="/libreta-bolsillo/papel" mat-raised-button>Papel</button>
+        <button name="bolsilloTela" routerLink="/libreta-bolsillo/tela" mat-raised-button>Tela</button>
+      </div>
+      <div class="carrousel-bolsillo">
+
+        <ngb-carousel *ngIf="imageBolsillo">
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="imageBolsillo[0]" alt="Random first slide">
+            </div>
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="imageBolsillo[1]" alt="Random second slide">
+            </div>
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="imageBolsillo[2]" alt="Random third slide">
+            </div>
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+    </section>
+  </div>
+  <br>
+  <app-footer></app-footer>
+  <br>
+  <!-- <mat-icon aria-hidden="false" aria-label="Example home icon">add_a_photo</mat-icon> -->
+</div>
