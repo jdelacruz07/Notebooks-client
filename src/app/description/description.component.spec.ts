@@ -1,6 +1,9 @@
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { AppRoutingModule } from '../app-routing.module';
 import { DescriptionComponent } from './description.component';
+import { Notebook } from '../notebook';
 
 describe('DescriptionComponent', () => {
   let component: DescriptionComponent;
@@ -8,7 +11,17 @@ describe('DescriptionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DescriptionComponent ]
+      imports: [
+       AppRoutingModule,
+       HttpClientModule,
+       
+      ],
+      declarations: [ DescriptionComponent,
+                     
+      ],
+      providers: [
+        Notebook
+      ],
     })
     .compileComponents();
   }));

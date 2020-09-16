@@ -9,7 +9,8 @@ export class Notebook {
   price: number;
   urlPhoto: string;
 
-  constructor(id: string, model: string, encuadernacion: string, color: string, sheets: string, typeOfMaterial: string, sizeOfNotebook: string, price: number, urlPhoto: string) {
+  constructor(id:string, model: string, encuadernacion: string, color: string, sheets: string, 
+              typeOfMaterial: string, sizeOfNotebook: string, price: number, urlPhoto: string) {
     this.id = id;
     this.model = model;
     this.encuadernacion = encuadernacion;

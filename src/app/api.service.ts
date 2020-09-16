@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Notebook } from './notebook';
 import { catchError } from 'rxjs/operators';
-import { ErrorHandler } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
