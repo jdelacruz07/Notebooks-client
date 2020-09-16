@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppRoutingModule } from '../app-routing.module';
 import { DescriptionComponent } from './description.component';
-import { Notebook } from '../notebook';
 
 describe('DescriptionComponent', () => {
   let component: DescriptionComponent;
@@ -12,18 +11,18 @@ describe('DescriptionComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-       AppRoutingModule,
-       HttpClientModule,
-       
+        AppRoutingModule,
+        HttpClientModule,
+
       ],
-      declarations: [ DescriptionComponent,
-                     
+      declarations: [DescriptionComponent,
+
       ],
       providers: [
-        Notebook
+       
       ],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

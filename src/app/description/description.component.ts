@@ -12,19 +12,20 @@ import { Notebook } from '../notebook';
 
 export class DescriptionComponent implements OnInit {
 
+
+  @Input() libretaDescription: Notebook;
+  @Output() isActive = new EventEmitter();
+  addedNotebook: boolean;
+  buttonOff: boolean;
+  isActiveDescription: boolean = false;
+
   libreta: Notebook;
   libretaFilter: any[];
   index: number;
-  addedNotebook: boolean;
   newNotebook: Notebook;
   type: any;
-  buttonOff: boolean;
   libretas: Notebook[] = [];
   notebooksNumber;
-  @Input() libretaDescription: Notebook;
-  @Output() isActive = new EventEmitter();
-  isActiveDescription: boolean = false;
-
 
   constructor(private aR: ActivatedRoute, private api: ApiService, private buyNotebook: BuyNotebookService) { }
 
@@ -34,7 +35,7 @@ export class DescriptionComponent implements OnInit {
     } else {
       this.libretaDescription.sheets = "Tamaño: Bolsillo (7.0*10.8cms), con 100 hojas blancas";
     }
-    
+
   }
 
   addCar(notebook) {
