@@ -30,9 +30,10 @@ import { NgbdModalContentComponent } from '../ngbd-modal-content/ngbd-modal-cont
 
 export class ShoppingCartComponent implements OnInit {
   buyOfNotebooks: Notebook[] = [];
-  animationState = 'active';
-  numberOfNotebooks: number;
   total: Number;
+
+  animationState = 'active';
+
 
   constructor(private buyNotebook: BuyNotebookService, public modalService: NgbModal) { }
 

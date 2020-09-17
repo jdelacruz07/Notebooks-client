@@ -12,22 +12,13 @@ import { Notebook } from '../notebook';
 
 export class DescriptionComponent implements OnInit {
 
-
   @Input() libretaDescription: Notebook;
   @Output() isActive = new EventEmitter();
   addedNotebook: boolean;
   buttonOff: boolean;
   isActiveDescription: boolean = false;
 
-  libreta: Notebook;
-  libretaFilter: any[];
-  index: number;
-  newNotebook: Notebook;
-  type: any;
-  libretas: Notebook[] = [];
-  notebooksNumber;
-
-  constructor(private aR: ActivatedRoute, private api: ApiService, private buyNotebook: BuyNotebookService) { }
+  constructor(private aR: ActivatedRoute, private buyNotebook: BuyNotebookService) { }
 
   ngOnInit(): void {
     if (this.libretaDescription.sizeOfNotebook == "carta") {
@@ -47,6 +38,5 @@ export class DescriptionComponent implements OnInit {
   onReturn() {
     this.isActive.emit(this.isActiveDescription);
   }
-
 
 }

@@ -13,7 +13,6 @@ export class NewLibretaComponent implements OnInit {
   form: FormGroup;
   newNotebook: Notebook = null;
   stockNotebooks: Notebook[] = [];
-  headers: string[];
 
   constructor(private api: ApiService) { }
 

@@ -11,7 +11,6 @@ import { Notebook } from '../notebook';
 
 export class LibretaBolsilloComponent implements OnInit {
   material: string = '';
-  libretasFilter: Notebook[] = [];
   libretas: Notebook[] = [];
   selectedNotebook: Notebook;
   isActiveDescription: Boolean = false;
